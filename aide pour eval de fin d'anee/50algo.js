@@ -121,3 +121,85 @@
 
 
 /*Print the first 10 Fibonacci numbers without recursion  ⭐*/
+
+
+// let num1 = 0;
+// let num2 = 1;
+// let somme = 0;
+// const res = [0,1]
+  
+// for(let i = 1; i < 10; i++){
+
+//     somme = num1 + num2; 
+//     num1 = num2; 
+//     num2 = somme; 
+
+//     res.push(somme)
+// }
+
+// console.log(res);
+
+/*Calculate the sum of digits of a positive integer number  ⭐*/
+
+
+// let somme = 0;
+// let i = 1
+
+// while(i <= 9){
+//     somme = somme + i;
+//     i = i + 1;
+// }
+
+// console.log(somme);
+
+/*Rotate an array to the left 1 position  ⭐*/
+
+// let arr = [1,2,3,4,5] 
+// arr.push(arr.shift())
+// console.log(arr);
+
+/*Rotate an array to the right 1 position  ⭐*/
+
+// let t = [1,2,3,4,5]
+// t.push(t.unshift(5))
+// t.pop(t.pop())
+// console.log(t);
+
+/*Reverse an array  ⭐*/
+
+// let arr = [1, 2, 3, 4, 5];
+// let result = []                   
+ 
+// for (let i = arr.length - 1; i >= 0; i--) {
+//     result.push(arr[i])
+// }
+
+// console.log(result);
+
+/*Reverse a string  ⭐*/
+
+// let str = "Ethan est null a brawl stars"
+// let result = ""
+
+// for (let i = str.length -1; i >= 0; i--) {
+//     result += str[i] 
+// }
+
+// console.log(result);
+
+
+
+
+
+
+ function tab(arr1,arr2){
+
+    let p = []
+    
+    p.push(arr1)
+    p.push(arr2)
+concat
+    return p
+ }
+
+console.log(tab([1, 2, 3, 4], [5, 6, 7, 8]));
