@@ -109,3 +109,192 @@
 //     console.log("Il est défavorable");
 // }
 
+//  exo 4.8
+
+// let annee = 2022;
+// let mois = 11;
+// let jour = 30;
+
+// let jourVerifier;
+// let moisVerifier;
+// let anneeVerifier;
+
+// if (mois > 12) {
+//     mois = false;
+// }
+
+
+// if (jour > 31) {
+//     jour = false;
+// }else if (jour <= 31 && mois% 2 === 0) {
+//     jour = true;
+//     mois = true;
+// }else if (jour <= 30 && mois% 1 === 0) {
+//     jour = true;
+//     mois = true;
+// }else {
+//     jourVerifier = false;
+//     moisVerifier = false;
+// }
+
+// if (annee% 1 === 0) {
+//     annee = true;
+// }else {
+//     anneeVerifier = false;
+// }
+// if (annee% 4 === 0) {
+//     annee = true;
+// }else {
+//     anneeVerifier = false;
+// }
+
+// if (annee === true && mois === true && jour === true) {
+//     console.log("la date est bonne");
+// }else {
+//     console.log("la date est fausse");
+// }
+
+// exo 5.2
+
+// let nomb = 8;
+
+// while (nomb < 10 || nomb > 20) {
+//     if (nomb < 10) {
+//         nomb = prompt("Plus grand!")
+//     }else if (nomb > 20) {
+//         nomb = prompt("Plus petit!")
+//     }
+// }
+
+// alert("le nombre est bien")
+
+// exo 5.4
+
+// let nombre = 7;
+// let reesult = 0;
+// for (let i = 1; i <= 10; i++) {
+//     reesult = nombre*i
+//     console.log(reesult);
+// }
+
+// exo 5.6 
+
+// let result = 1;
+
+// for (let i = 0; i < 8; i++) {
+//     result += result * i;
+// }
+
+// console.log(result);
+
+
+// exo 5.4
+
+// let num = prompt("numero");
+// let plus = 0;
+// let cont = 0;
+// let counter = 0;
+
+// while (num > 0){
+//     num = prompt("un autre");
+//     cont++;
+//     if (num > plus) {
+//         plus = num;
+//         counter = cont + 1;
+//     }
+
+// }
+
+
+// alert(`ton plus grand est ${plus} a la place ${counter}`)
+
+
+// exo 5.9
+
+
+
+// let num = parseInt(prompt("numero"));
+// let resultaDesCourse = num;
+// let billetDeDix = 0;
+// let billetDeCinq = 0;
+// let piece = 0;
+
+// while (num > 0){
+//     num = parseInt(prompt("un autre"));
+//     resultaDesCourse += num;
+// }
+
+// alert(`le total est de ${resultaDesCourse}`);
+// // let argentArendre = argent - resultaDesCourse;
+
+// while (argent > 0 ) {
+//     let argentAPayer = parseInt(prompt(``))
+//     resultaDesCourse -= argentAPayer;
+// }
+
+
+
+
+// while (argentArendre > 0) {
+//     if (argentArendre >= 10) {
+//         argentArendre -= 10;
+//         billetDeDix++;
+//     }else if (argentArendre >= 5) {
+//         argentArendre -= 5;
+//         billetDeCinq++;
+//     }else if (argentArendre < 5) {
+//         argentArendre -= 1;
+//         piece++;
+//     }
+// }
+
+
+// alert(`la caissière rend ${billetDeDix} billet de dix  ${billetDeCinq} billet de cinq et ${piece} piece de 1`)
+
+
+// exo 5.10
+
+// let n = 10;
+// let facN = 1;
+// let p = 3;
+// let facP = 1;
+// let nMoinP = n - p;
+// let facNMoinP = 1;
+
+// for (let i = 0; i < n; i++) {
+//     facN += facN * i;
+// }
+
+// for (let i = 0; i < p; i++) {
+//     facP += facP * i;
+// }
+
+// for (let i = 0; i < nMoinP; i++) {
+//     facNMoinP += facNMoinP * i;
+// }
+
+
+// let x = facN / facNMoinP;
+// let y = facN / (facP*facNMoinP);
+
+// alert(`votre chance de gagner dans le désordre et de ${y} et votre chance de gagner dans l'ordre ${x} `)
+
+// exo fibo 
+
+let nomb = parseInt(prompt("choisi un nombre"))
+
+function fibonacci(nombre) {
+    let n1 = 0;
+    let n2 = 1;
+    let somme = 0;
+  
+    for(let i = 2; i <= nombre; i++){
+       somme = n1 + n2; 
+       n1 = n2; 
+       n2 = somme; 
+    }
+  
+    return nombre ? n2 : n1;
+ }
+
+ alert(`la suite de se nombre est ${fibonacci(nomb)}`);
